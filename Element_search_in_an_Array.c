@@ -1,23 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,flag=0;
-    scanf("%d",&n);
-    int arr[n],i;
-    for(i=1;i<=n;i++)
+    int a,i,s=0,e,flag=0;
+    scanf("%d",&a);
+    int arr[a];
+    for(i=0;i<a;i++)
     {
         scanf("%d",&arr[i]);
     }
-    int se;
-    scanf("%d",&se);
-    for(i=0;i<n;i++)
+    scanf("%d",&e);
+    for(i=0;i<a;i++)
+    if(e==arr[i])
     {
-        if(arr[i]==se)
-        {
-            flag=1;
-            break;
-        }
-        
+        flag=1;
     }
     if(flag==1)
     {
